@@ -1,0 +1,30 @@
+name: Monitor Argus
+
+on:
+  schedule:
+    # Roda a cada 12 horas (UTC) — respeitando a cota diária do VirusTotal (500/dia)
+    # Com 12h de intervalo, cada alvo consome 1 consulta por ciclo
+    - cron: "0 */12 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  monitorar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Executar monitor
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python monitor.py

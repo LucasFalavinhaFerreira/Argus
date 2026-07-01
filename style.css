@@ -1,0 +1,78 @@
+/* Customização Global do Dashboard do SOC */
+body, .gradio-container, .gradio-container-6-0-0 {
+    background-color: #0a0f1d !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #00ff9d !important;
+}
+
+/* Títulos, textos, spans e labels em geral */
+h1, h2, h3, p, span, label, .m-12 {
+    color: #00ff9d !important;
+    text-shadow: 0 0 5px rgba(0, 255, 157, 0.3) !important;
+}
+
+/* Forçar a cor dos textos informativos menores do Gradio */
+.md p, .md h1, .md h2, .md h3 {
+    color: #00ff9d !important;
+}
+
+/* Linhas divisórias */
+hr {
+    border-top: 1px solid #00e5ff !important;
+    opacity: 0.3;
+}
+
+/* Customização dos blocos laterais (Cyber Box) */
+.cyber-box {
+    background: #0d1527 !important;
+    border: 1px solid #00e5ff !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.15) !important;
+}
+
+/* Forçar o fundo e texto de TODAS as caixas de texto e áreas de log */
+textarea, input[type="text"], .border-none, .bg-gray-50, .dark\:bg-gray-950 {
+    background-color: #050a15 !important;
+    border: 1px solid #00ff9d !important;
+    color: #00ff9d !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    box-shadow: inset 0 0 8px rgba(0, 255, 157, 0.2) !important;
+}
+
+/* Rótulos superiores dos componentes (Ex: MONITOR DE EXECUÇÃO) */
+.block label span, .block span {
+    background-color: #0d1527 !important;
+    color: #00e5ff !important;
+    font-weight: bold !important;
+}
+
+/* O Botão Neon Principal e secundários */
+.neon-btn, button, .gr-button {
+    background: linear-gradient(135deg, #00baad 0%, #00ff9d 100%) !important;
+    color: #0a0f1d !important;
+    font-weight: bold !important;
+    border: 1px solid #00ff9d !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 0 12px rgba(0, 255, 157, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+.neon-btn:hover, button:hover {
+    background: linear-gradient(135deg, #00ff9d 0%, #00e5ff 100%) !important;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.7) !important;
+    transform: scale(1.01) !important;
+    cursor: pointer !important;
+}
+
+/* Estilização da área de download do arquivo */
+.file-preview, .upload-container, .file-preview-holder {
+    background-color: #050a15 !important;
+    border: 1px solid #00e5ff !important;
+    color: #00ff9d !important;
+}
+
+/* Esconde o rodapé padrão */
+footer, .footer {
+    display: none !important;
+}
