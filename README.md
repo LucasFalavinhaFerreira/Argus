@@ -107,7 +107,7 @@ Para disparar manualmente: **Actions → Monitor Argus → Run workflow**
 
 Este projeto faz parte de uma trilha de SOC tooling:
 
-- [**Sentinela SOC**](ttps://github.com/LucasFalavinhaFerreira/sentinela-soc) — Pipeline de Threat Intelligence: coleta 7 feeds públicos de IPs maliciosos, enriquece via AbuseIPDB, persiste em Postgres e alerta via Slack. Automação via GitHub Actions (cron 6h).
+- [**Sentinela SOC**](https://github.com/LucasFalavinhaFerreira/sentinela-soc) — Pipeline de Threat Intelligence: coleta 7 feeds públicos de IPs maliciosos, enriquece via AbuseIPDB, persiste em Postgres e alerta via Slack. Automação via GitHub Actions (cron 6h).
 - **Argus** ← você está aqui
 - [**Huginn**](https://github.com/LucasFalavinhaFerreira/Huginn) — Playbook de investigação de IOC: IP, domínio, URL e hash com mapeamento automático de TTPs do MITRE ATT&CK e geração de relatório HTML.
 
